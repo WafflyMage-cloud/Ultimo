@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Hardware y Software para PC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <h1>Tienda de Componentes de PC</h1>
+        <p>Catálogo de hardware y software de buen rendimiento con precios y disponibilidad.</p>
+    </header>
+
+    <div class="diseño">
+        
+        <aside class="lateral" id="lateral">
+            <h2>Carrito</h2>
+            <div class="seccion">
+                <h3>Artículos (<span id="total-articulos">0</span>)</h3>
+                
+                <div id="lista-carrito">
+                    <p class="relleno">El carrito está vacío.</p>
+                </div>
+                
+                <p><strong>Total:</strong> S/<span id="total-precio">0.00</span></p> </div>
+            
+            <div class="seccion lista-alerta">
+                <h3>Filtros Rápidos</h3>
+                <ul>
+                    <li class="articulo-alerta info" id="filtro-stock">Solo en Stock (5)</li>
+                    <li class="articulo-alerta info" id="filtro-nvidia">Marca NVIDIA (1)</li>
+                    <li class="articulo-alerta info" id="filtro-descuento">Descuento > 15% (2)</li>
+                    <li class="articulo-alerta info" id="filtro-reset">Mostrar Todo</li>
+                </ul>
+            </div>
+            <div class="seccion">
+                <h3>Pago Seguro</h3>
+                <p>Aceptamos todas las tarjetas principales tambien Yape y PayPal</p>
+            </div>
+            <div class="seccion">
+                <button class="boton-pagar" id="boton-pagar">Pagar Ahora</button>
+                <button class="boton-vaciar" id="boton-vaciar">Vaciar carrito</button>
+            </div>
+        </aside>
+
+        <main class="principal">
+            
+            <h2 class="titulo">1. Procesadores (CPU)</h2>
+            <section id="cpu-lista" class="rejilla">
+
+                <div class="tarjeta" data-id="cpu-i7" data-price="1520.00" data-stock="25"> <span class="etiqueta ok">En Stock (25)</span>
+                    
+                    <div class="nombre">Intel Core i7-14700K</div>
+                    <div class="tipo">CPU de Alto Rendimiento</div>
+                    <div class="def">Procesador de 20 Núcleos (8P+12E) para juegos y estaciones de trabajo.</div>
+                    <div class="datos">
+                        <div class="dato-item"><div class="valor">Intel</div><div class="texto">Marca</div></div>
+                        <div class="dato-item"><div class="valor">LGA 1700</div><div class="texto">Socket</div></div>
+                    </div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/1520.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="cpu-r7" data-price="1330.00" data-stock="25"> <span class="etiqueta ok">En Stock (40)</span>
+                    
+                    <div class="nombre">AMD Ryzen 7 7700X</div>
+                    <div class="tipo">CPU Zen 4 de 8 Núcleos</div>
+                    <div class="def">Procesador de 8 núcleos/16 hilos. Excelente relación rendimiento/precio.</div>
+                    <div class="datos">
+                        <div class="dato-item"><div class="valor">AMD</div><div class="texto">Marca</div></div>
+                        <div class="dato-item"><div class="valor">AM5</div><div class="texto">Socket</div></div>
+                    </div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/1330.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <h2 class="titulo">2. Tarjetas Gráficas (GPU)</h2>
+            <section id="gpu-lista" class="rejilla">
+
+                <div class="tarjeta" data-id="gpu-4080" data-price="3800.00" data-stock="25"> <span class="etiqueta ok">En Stock (12)</span>
+                    
+                    <div class="nombre">NVIDIA RTX 4080 SUPER</div>
+                    <div class="tipo">Tarjeta Gráfica Gaming</div>
+                    <div class="def">GPU con 16GB VRAM, ideal para 4K y Trazado de Rayos (Ray Tracing).</div>
+                    <div class="datos">
+                        <div class="dato-item"><div class="valor">NVIDIA</div><div class="texto">Marca</div></div>
+                        <div class="dato-item"><div class="valor">16 GB</div><div class="texto">VRAM</div></div>
+                    </div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/3800.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="gpu-rx7800" data-price="1900.00" data-stock="25"> <span class="etiqueta ok">En Stock (35)</span>
+                    
+                    <div class="nombre">AMD Radeon RX 7800 XT</div>
+                    <div class="tipo">Tarjeta Gráfica 1440p</div>
+                    <div class="def">GPU con 16GB VRAM, rendimiento excepcional para resoluciones 2K.</div>
+                    <div class="datos">
+                        <div class="dato-item"><div class="valor">AMD</div><div class="texto">Marca</div></div>
+                        <div class="dato-item"><div class="valor">16 GB</div><div class="texto">VRAM</div></div>
+                    </div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/1900.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <h2 class="titulo">3. Almacenamiento y RAM</h2>
+            <section id="almacenamiento-lista" class="rejilla">
+                
+                <div class="tarjeta" data-id="ram-6000" data-price="450.00" data-stock="25"> <span class="etiqueta alerta">Últimas 5 Unid.</span>
+                    
+                    <div class="nombre">Corsair Vengeance 32GB</div>
+                    <div class="tipo">Memoria DDR5 de Alto Clock</div>
+                    <div class="def">Kit DDR5 6000MHz CL30 (2x16GB) para plataformas modernas.</div>
+                    <div class="datos">
+                        <div class="dato-item"><div class="valor">Corsair</div><div class="texto">Marca</div></div>
+                        <div class="dato-item"><div class="valor">6000 MHz</div><div class="texto">Frecuencia</div></div>
+                    </div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/450.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="ram-ddr4" data-price="250.00" data-stock="25"> <span class="etiqueta ok">En Stock (50)</span>
+                    
+                    <div class="nombre">Kingston Fury 16GB</div>
+                    <div class="tipo">Memoria DDR4 Gaming</div>
+                    <div class="def">Kit DDR4 3200MHz (2x8GB) para sistemas de generaciones anteriores.</div>
+                    <div class="datos">
+                        <div class="dato-item"><div class="valor">Kingston</div><div class="texto">Marca</div></div>
+                        <div class="dato-item"><div class="valor">3200 MHz</div><div class="texto">Frecuencia</div></div>
+                    </div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/250.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" data-id="ssd-990pro" data-price="620.00" data-stock="25"> <span class="etiqueta ok">En Stock (80)</span>
+                    
+                    <div class="nombre">Samsung 990 Pro 2TB</div>
+                    <div class="tipo">NVMe PCIe 4.0 Extremo</div>
+                    <div class="def">SSD ultrarrápido con 7000 MB/s de lectura. Ideal para SO y juegos.</div>
+                    <div class="datos">
+                        <div class="dato-item"><div class="valor">Samsung</div><div class="texto">Marca</div></div>
+                        <div class="dato-item"><div class="valor">2 TB</div><div class="texto">Capacidad</div></div>
+                    </div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/620.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="ssd-sn850" data-price="380.00" data-stock="25"> <span class="etiqueta ok">En Stock (120)</span>
+                    
+                    <div class="nombre">WD Black SN850X 1TB</div>
+                    <div class="tipo">NVMe PCIe 4.0 Gaming</div>
+                    <div class="def">Unidad de estado sólido de alta velocidad, optimizada para juegos.</div>
+                    <div class="datos">
+                        <div class="dato-item"><div class="valor">WD</div><div class="texto">Marca</div></div>
+                        <div class="dato-item"><div class="valor">1 TB</div><div class="texto">Capacidad</div></div>
+                    </div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/380.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" data-id="hdd" data-price="570.00" data-stock="25"> <span class="etiqueta critico">Agotado</span>
+                    
+                    <div class="nombre">Seagate Barracuda 8TB</div>
+                    <div class="tipo">HDD de Almacenamiento Masivo</div>
+                    <div class="def">Disco de 8TB a 7200 RPM para copias de seguridad y archivos.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Seagate</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">8 TB</div><div class="texto">Capacidad</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/570.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar deshabilitado" disabled>Sin Stock</button></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <h2 class="titulo">4. Placas Base, Fuentes y Refrigeración</h2>
+            <section id="energia-lista" class="rejilla">
+                
+                <div class="tarjeta" data-id="mb-z790" data-price="1600.00" data-stock="5"> <span class="etiqueta ok">En Stock (15)</span>
+                    
+                    <div class="nombre">ASUS ROG Z790 HERO</div>
+                    <div class="tipo">Placa Base Premium</div>
+                    <div class="def">Chipset Z790 de alta gama con soporte DDR5 y 4 puertos M.2.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">ASUS</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">Z790</div><div class="texto">Chipset</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/1600.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="mb-b650" data-price="760.00" data-stock="25"> <span class="etiqueta ok">En Stock (28)</span>
+                    
+                    <div class="nombre">MSI MAG B650 Tomahawk</div>
+                    <div class="tipo">Placa Base AM5 de Valor</div>
+                    <div class="def">Chipset B650 con soporte PCIe 5.0 y DDR5. Perfecta para Ryzen 7000.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">MSI</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">B650</div><div class="texto">Chipset</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/760.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" data-id="cooler-kraken" data-price="680.00" data-stock="25"> <span class="etiqueta ok">En Stock (30)</span>
+                    
+                    <div class="nombre">NZXT Kraken 360 RGB</div>
+                    <div class="tipo">Refrigeración Líquida AIO</div>
+                    <div class="def">Sistema de 360mm con pantalla LCD personalizable para CPU.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">NZXT</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">360 mm</div><div class="texto">Tamaño</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/680.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="cooler-nhd15" data-price="420.00" data-stock="25"> <span class="etiqueta ok">En Stock (50)</span>
+                    
+                    <div class="nombre">Noctua NH-D15S chromax</div>
+                    <div class="tipo">Refrigeración por Aire Extrema</div>
+                    <div class="def">Disipador doble torre legendario, rendimiento similar a la líquida.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Noctua</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">Aire</div><div class="texto">Tipo</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/420.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" data-id="psu-1000w" data-price="870.00" data-stock="25"> <span class="etiqueta ok">En Stock (20)</span>
+                    
+                    <div class="nombre">Seasonic Prime 1000W</div>
+                    <div class="tipo">PSU 1000W Platinum</div>
+                    <div class="def">Fuente Fully Modular con certificación 80 Plus Platinum.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Seasonic</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">1000 W</div><div class="texto">Potencia</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/870.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <h2 class="titulo">5. Gabinetes, Monitores y Periféricos</h2>
+            <section id="perifericos-lista" class="rejilla">
+
+                <div class="tarjeta" data-id="case-li" data-price="720.00" data-stock="25"> <span class="etiqueta ok">En Stock (45)</span>
+                    
+                    <div class="nombre">Lian Li O11 Dynamic EVO</div>
+                    <div class="tipo">Gabinete Mid-Tower Premium</div>
+                    <div class="def">Chasis con paneles de cristal y diseño optimizado para refrigeración.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Lian Li</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">Mid-Tower</div><div class="texto">Formato</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/720.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="case-nzxt" data-price="380.00" data-stock="25"> <span class="etiqueta ok">En Stock (60)</span>
+                    
+                    <div class="nombre">NZXT H5 Flow Compact</div>
+                    <div class="tipo">Gabinete Compacto con Flujo de Aire</div>
+                    <div class="def">Chasis Mid-Tower limpio con excelente rendimiento térmico.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">NZXT</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">Mid-Tower</div><div class="texto">Formato</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/380.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" data-id="monitor-pg27" data-price="2100.00" data-stock="25" data-descuento="20"> <span class="etiqueta ok">En Stock (20)</span>
+                    
+                    <div class="nombre">ASUS ROG Swift PG279QM</div>
+                    <div class="tipo">Monitor Gaming 27" 1440p</div>
+                    <div class="def">Panel IPS 27" con 240Hz, 1ms de respuesta y G-SYNC.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">ASUS</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">240 Hz</div><div class="texto">Tasa Refresco</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/2100.00 ahora S/1800.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="monitor-ultrawide" data-price="3000.00" data-stock="25"> <span class="etiqueta ok">En Stock (15)</span>
+                    
+                    <div class="nombre">Alienware 34" Ultrawide QD-OLED</div>
+                    <div class="tipo">Monitor Curvo QD-OLED</div>
+                    <div class="def">Panel 34" Ultrawide 144Hz, colores vibrantes y negros perfectos.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Alienware</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">QD-OLED</div><div class="texto">Panel</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/3000.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="keyboard" data-price="600.00" data-stock="25"> <span class="etiqueta ok">En Stock (100)</span>
+                    
+                    <div class="nombre">Logitech G Pro TKL</div>
+                    <div class="tipo">Teclado Mecánico Gaming</div>
+                    <div class="def">Diseño tenkeyless, switches GX Blue y retroiluminación RGB.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Logitech</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">TKL</div><div class="texto">Formato</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/600.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="mouse" data-price="300.00" data-stock="25"> <span class="etiqueta ok">En Stock (150)</span>
+                    
+                    <div class="nombre">Razer Viper V2 Pro</div>
+                    <div class="tipo">Ratón Gaming Ultraligero</div>
+                    <div class="def">Ratón inalámbrico de 58g con sensor Focus Pro 30K DPI.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Razer</div><div class="texto">Marca</div></div><div class="dato-item"><div class="valor">58 g</div><div class="texto">Peso</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/300.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <h2 class="titulo titulo-software">6. Software y Licencias</h2>
+            <section id="software-lista" class="rejilla">
+
+                <div class="tarjeta" data-id="os-w11" data-price="760.00" data-stock="25"> <span class="etiqueta ok">Licencia Digital</span>
+                    
+                    <div class="nombre">Windows 11 Pro</div>
+                    <div class="tipo">Sistema Operativo</div>
+                    <div class="def">Licencia digital para la versión profesional de Windows 11.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Microsoft</div><div class="texto">Desarrollador</div></div><div class="dato-item"><div class="valor">Digital</div><div class="texto">Formato</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/760.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="os-w10" data-price="600.00" data-stock="25"> <span class="etiqueta ok">Licencia Digital</span>
+                    
+                    <div class="nombre">Windows 10 Home</div>
+                    <div class="tipo">Sistema Operativo</div>
+                    <div class="def">Licencia digital para la versión Home de Windows 10 (compatible con actualización).</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Microsoft</div><div class="texto">Desarrollador</div></div><div class="dato-item"><div class="valor">Digital</div><div class="texto">Formato</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/600.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" data-id="antivirus" data-price="230.00" data-stock="25"> <span class="etiqueta ok">1 Año / 3 PCs</span>
+                    
+                    <div class="nombre">Bitdefender Total Security</div>
+                    <div class="tipo">Antivirus y Seguridad</div>
+                    <div class="def">Protección contra malware, virus y phishing para múltiples dispositivos.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Bitdefender</div><div class="texto">Desarrollador</div></div><div class="dato-item"><div class="valor">3 PCs</div><div class="texto">Cobertura</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/230.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" data-id="office" data-price="380.00" data-stock="25"> <span class="etiqueta ok">1 Año / 5 Dispositivos</span>
+                    
+                    <div class="nombre">Microsoft Office 365 Personal</div>
+                    <div class="tipo">Paquete de Productividad</div>
+                    <div class="def">Suscripción anual con Word, Excel, PowerPoint y 1TB en la nube.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Microsoft</div><div class="texto">Desarrollador</div></div><div class="dato-item"><div class="valor">1 Año</div><div class="texto">Licencia</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/380.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Comprar</button></div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" data-id="service" data-price="0.00" data-stock="25">
+                    <span class="etiqueta pendiente">Servicio Gratuito</span>
+                    
+                    <div class="nombre">Instalación y Configuración</div>
+                    <div class="tipo">Servicio Adicional</div>
+                    <div class="def">Asistencia remota para instalar y configurar componentes comprados.</div>
+                    <div class="datos"><div class="dato-item"><div class="valor">Tienda</div><div class="texto">Proveedor</div></div><div class="dato-item"><div class="valor">Remoto</div><div class="texto">Modalidad</div></div></div>
+                    <div class="datos extra">
+                        <div class="dato-item valor-precio"><div class="valor">S/0.00</div><div class="texto">Precio</div></div> <div class="dato-item"><button class="boton-comprar">Añadir Servicio</button></div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <h2 class="titulo">Contacto</h2>
+            <div class="seccion-contacto">
+                <ul>
+                    <li>Ventas y Consultas: <a href="mailto:ventas@tiendahardwareextrema.com"></a></li>
+                    <li>Soporte Técnico: <a href="mailto:soporte@tiendahardwareextrema.com"></a></li>
+                    <li>Teléfono:</li>
+                    <li>Horario de Atención: Lunes a Viernes 9:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+            
+        </main>
+    </div>
+
+    <footer id="registro" class="panel-registro">
+        Tienda cargada. ¡Empieza a añadir componentes!
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
